@@ -29,7 +29,10 @@ export default function Services() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-32 px-8 bg-surface" id="services">
+    <section
+      className="min-h-screen flex flex-col justify-center py-32 px-8 bg-surface"
+      id="services"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="mb-20 flex justify-between items-end">
           <div>

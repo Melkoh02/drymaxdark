@@ -1,9 +1,11 @@
 import { useTranslation } from "react-i18next";
+import { useActiveSection } from "../hooks/useActiveSection";
 
 const NAV_ITEMS = ["about", "services", "process", "contact"] as const;
 
 export default function Navbar() {
   const { t, i18n } = useTranslation();
+  const activeSection = useActiveSection();
   const currentLang = i18n.language;
 
   const toggleLang = () => {
@@ -20,9 +22,16 @@ export default function Navbar() {
           <a
             key={item}
             href={`#${item}`}
-            className="font-headline tracking-[0.05em] uppercase text-sm font-bold text-neutral-500 hover:text-black transition-colors duration-300"
+            className={`font-headline tracking-[0.05em] uppercase text-sm font-bold transition-colors duration-300 ${
+              activeSection === item
+                ? "text-black"
+                : "text-neutral-400 hover:text-black"
+            }`}
           >
             {t(`nav.${item}`)}
+            {activeSection === item && (
+              <span className="block h-[2px] bg-secondary-container mt-1" />
+            )}
           </a>
         ))}
       </div>

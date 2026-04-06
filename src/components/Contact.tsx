@@ -9,7 +9,10 @@ export default function Contact() {
   };
 
   return (
-    <section className="py-32 px-8 bg-surface-container-highest" id="contact">
+    <section
+      className="min-h-screen flex flex-col justify-center py-32 px-8 bg-surface-container-highest"
+      id="contact"
+    >
       <div className="max-w-4xl mx-auto bg-surface p-12 md:p-20 rounded-sm shadow-[0_40px_60px_-15px_rgba(26,28,28,0.06)]">
         <div className="mb-12">
           <h2 className="font-headline text-4xl font-black uppercase tracking-tight mb-4">

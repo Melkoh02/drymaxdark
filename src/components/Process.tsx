@@ -13,7 +13,10 @@ export default function Process() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-32 px-8 bg-surface-container-lowest" id="process">
+    <section
+      className="min-h-screen flex flex-col justify-center py-32 px-8 bg-surface-container-lowest"
+      id="process"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-24">
           <span className="font-label text-xs uppercase tracking-[0.5em] text-outline mb-4 block">

@@ -7,7 +7,10 @@ export default function About() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-32 px-8 bg-surface-container-low" id="about">
+    <section
+      className="min-h-screen flex flex-col justify-center py-32 px-8 bg-surface-container-low"
+      id="about"
+    >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
         <div className="relative aspect-square bg-surface-container-highest overflow-hidden rounded-sm">
           <img

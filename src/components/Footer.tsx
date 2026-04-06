@@ -1,6 +1,13 @@
 import { useTranslation } from "react-i18next";
 
-const SOCIAL_KEYS = ["instagram", "linkedin", "email"] as const;
+const WHATSAPP_URL =
+  "https://wa.me/595991510703";
+
+const LINKS = [
+  { key: "instagram", href: "#" },
+  { key: "linkedin", href: "#" },
+  { key: "whatsapp", href: WHATSAPP_URL },
+] as const;
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -17,10 +24,12 @@ export default function Footer() {
           </p>
         </div>
         <div className="flex gap-8">
-          {SOCIAL_KEYS.map((key) => (
+          {LINKS.map(({ key, href }) => (
             <a
               key={key}
-              href="#"
+              href={href}
+              target={key === "whatsapp" ? "_blank" : undefined}
+              rel={key === "whatsapp" ? "noopener noreferrer" : undefined}
               className="font-label text-[10px] tracking-widest uppercase text-neutral-400 hover:text-blue-400 transition-colors opacity-80 hover:opacity-100"
             >
               {t(`footer.${key}`)}
