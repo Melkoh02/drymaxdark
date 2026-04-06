@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "about": "Nosotros",
+    "services": "Servicios",
+    "process": "Proceso",
+    "contact": "Contacto",
+    "cta": "Pedí tu Proyecto"
+  },
+  "hero": {
+    "tagline": "Precisión en cada detalle",
+    "subtitle": "Soluciones a medida. Hechas para vos.",
+    "quote": "Cada milímetro es intencional. Cada unión se ve, pero fluye perfecto.",
+    "cta": "Empezá tu Proyecto"
+  },
+  "about": {
+    "label": "El Artesano",
+    "heading": "Traé el problema, yo construyo la solución.",
+    "description": "La adaptabilidad es mi herramienta principal. Desde la rigidez del metal hasta la calidez de la madera y la expresión táctil de la ropa hecha a mano. Mi trabajo vive en la intersección entre lo útil y lo artístico.",
+    "materialsLabel": "Materiales",
+    "materialsValue": "Madera, Metal, Textil",
+    "disciplineLabel": "Disciplina",
+    "disciplineValue": "Diseño y Construcción"
+  },
+  "services": {
+    "label": "Nuestro Alcance",
+    "heading": "Capacidades",
+    "items": [
+      {
+        "title": "Muebles a Medida",
+        "description": "Mesas artesanales, mueblería a medida y estructuras arquitectónicas hechas para durar."
+      },
+      {
+        "title": "Metalurgia",
+        "description": "Portones industriales, estructuras metálicas y piezas de acero para proyectos arquitectónicos."
+      },
+      {
+        "title": "Indumentaria",
+        "description": "Ropa de trabajo pesado, remeras estampadas y buzos a medida, pensados para el taller."
+      },
+      {
+        "title": "Trabajo Creativo",
+        "description": "Exploraciones sonoras, composición musical y mentoría en la filosofía de crear."
+      }
+    ]
+  },
+  "process": {
+    "label": "El Flujo de Trabajo",
+    "heading": "El Proceso",
+    "steps": [
+      {
+        "title": "Descubrimiento",
+        "description": "Vos traés la idea. Juntos definimos los límites y objetivos."
+      },
+      {
+        "title": "Diseño",
+        "description": "Diseño una solución técnica, asegurando la integridad estructural."
+      },
+      {
+        "title": "Fabricación",
+        "description": "La fase de construcción. Ejecución precisa en cada material."
+      },
+      {
+        "title": "Entrega",
+        "description": "Recibís un resultado hecho a medida, construido para toda la vida."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contame qué necesitás",
+    "description": "Describí tu proyecto, preferencias de materiales y tiempos. Lo reviso y te respondo con un camino técnico.",
+    "nameLabel": "Nombre",
+    "namePlaceholder": "Juan Pérez",
+    "emailLabel": "Email de Contacto",
+    "emailPlaceholder": "juan@ejemplo.com",
+    "descriptionLabel": "Descripción del Pedido",
+    "descriptionPlaceholder": "Contanos brevemente qué querés construir...",
+    "submit": "Enviar Consulta"
+  },
+  "footer": {
+    "copyright": "© DMD Todos los derechos reservados. Precisión en cada detalle.",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  }
+}

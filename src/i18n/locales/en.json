@@ -1,0 +1,85 @@
+{
+  "nav": {
+    "about": "About",
+    "services": "Services",
+    "process": "Process",
+    "contact": "Contact",
+    "cta": "Request a Project"
+  },
+  "hero": {
+    "tagline": "Precision in craft",
+    "subtitle": "Custom solutions. Built to fit your needs.",
+    "quote": "Every millimetre is intentional. Every joint is visible yet seamless.",
+    "cta": "Start Project"
+  },
+  "about": {
+    "label": "The Craftsman",
+    "heading": "Bring the problem, I'll build the solution.",
+    "description": "Adaptability is my primary tool. From the rigid structure of metalwork to the organic warmth of wood and the tactile expression of custom apparel. My work lives at the intersection of utility and artistic rigor.",
+    "materialsLabel": "Materials",
+    "materialsValue": "Wood, Metal, Textile",
+    "disciplineLabel": "Discipline",
+    "disciplineValue": "Design & Build"
+  },
+  "services": {
+    "label": "Our Scope",
+    "heading": "Capabilities",
+    "items": [
+      {
+        "title": "Custom Furniture",
+        "description": "Handcrafted tables, custom cabinetry, and architectural structures built for longevity."
+      },
+      {
+        "title": "Metalwork",
+        "description": "Industrial gates, structural frames, and custom steel components for architectural needs."
+      },
+      {
+        "title": "Clothing",
+        "description": "Heavy-duty apparel, custom screen-printed tees, and bespoke hoodies tailored for the workshop."
+      },
+      {
+        "title": "Creative Work",
+        "description": "Sonic explorations, musical scores, and mentorship in the philosophy of making."
+      }
+    ]
+  },
+  "process": {
+    "label": "The Workflow",
+    "heading": "The Flow",
+    "steps": [
+      {
+        "title": "Discovery",
+        "description": "You bring the idea. We define the constraints and objectives."
+      },
+      {
+        "title": "Design",
+        "description": "I design a technical solution, ensuring structural integrity."
+      },
+      {
+        "title": "Fabrication",
+        "description": "The build phase. Precise execution across materials."
+      },
+      {
+        "title": "Fulfillment",
+        "description": "You receive a custom result built to last a lifetime."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Tell me what you need",
+    "description": "Describe your project, material preferences, and timeline. I'll review and get back to you with a technical path forward.",
+    "nameLabel": "Name",
+    "namePlaceholder": "John Doe",
+    "emailLabel": "Contact Email",
+    "emailPlaceholder": "john@example.com",
+    "descriptionLabel": "Description of Request",
+    "descriptionPlaceholder": "Briefly describe what you're looking to build...",
+    "submit": "Submit Inquiry"
+  },
+  "footer": {
+    "copyright": "© DMD All rights reserved. Precision in craft.",
+    "instagram": "Instagram",
+    "linkedin": "LinkedIn",
+    "email": "Email"
+  }
+}

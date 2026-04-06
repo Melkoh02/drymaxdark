@@ -1,6 +1,10 @@
-const SOCIAL_LINKS = ["Instagram", "LinkedIn", "Email"] as const;
+import { useTranslation } from "react-i18next";
+
+const SOCIAL_KEYS = ["instagram", "linkedin", "email"] as const;
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="w-full py-12 px-8 bg-neutral-50 border-t border-neutral-200">
       <div className="flex flex-col md:flex-row justify-between items-center w-full max-w-7xl mx-auto">
@@ -9,17 +13,17 @@ export default function Footer() {
             DMD
           </span>
           <p className="font-label text-[10px] tracking-widest uppercase mt-2 text-neutral-400">
-            &copy; DMD All rights reserved. Precision in craft.
+            {t("footer.copyright")}
           </p>
         </div>
         <div className="flex gap-8">
-          {SOCIAL_LINKS.map((link) => (
+          {SOCIAL_KEYS.map((key) => (
             <a
-              key={link}
+              key={key}
               href="#"
               className="font-label text-[10px] tracking-widest uppercase text-neutral-400 hover:text-blue-400 transition-colors opacity-80 hover:opacity-100"
             >
-              {link}
+              {t(`footer.${key}`)}
             </a>
           ))}
         </div>
