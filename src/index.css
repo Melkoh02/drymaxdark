@@ -1,4 +1,70 @@
-html, body, #root {
+@import "tailwindcss";
+
+@theme {
+  /* Colors - Design System: Structural Precision */
+  --color-tertiary: #2e3e3e;
+  --color-on-secondary-container: #0d1e25;
+  --color-on-background: #1a1c1c;
+  --color-on-secondary: #ffffff;
+  --color-primary-fixed-dim: #474746;
+  --color-surface-bright: #f9f9f9;
+  --color-outline: #777777;
+  --color-inverse-on-surface: #f1f1f1;
+  --color-surface-container: #eeeeee;
+  --color-secondary-fixed-dim: #9daeb7;
+  --color-outline-variant: #c6c6c6;
+  --color-background: #f9f9f9;
+  --color-on-primary-container: #ffffff;
+  --color-tertiary-fixed-dim: #3a4a49;
+  --color-on-secondary-fixed-variant: #2e3e45;
+  --color-on-tertiary-fixed: #ffffff;
+  --color-primary-fixed: #5f5e5e;
+  --color-primary: #000000;
+  --color-on-secondary-fixed: #0d1e25;
+  --color-on-tertiary-container: #ffffff;
+  --color-inverse-primary: #c8c6c5;
+  --color-on-error: #ffffff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface: #f9f9f9;
+  --color-on-surface-variant: #474747;
+  --color-tertiary-container: #677877;
+  --color-on-primary-fixed-variant: #e5e2e1;
+  --color-on-primary-fixed: #ffffff;
+  --color-primary-container: #3c3b3b;
+  --color-surface-dim: #dadada;
+  --color-surface-container-highest: #e2e2e2;
+  --color-secondary-fixed: #b8c9d3;
+  --color-surface-container-high: #e8e8e8;
+  --color-on-surface: #1a1c1c;
+  --color-on-tertiary-fixed-variant: #d4e6e5;
+  --color-on-error-container: #410002;
+  --color-on-primary: #e5e2e1;
+  --color-error: #ba1a1a;
+  --color-surface-tint: #5f5e5e;
+  --color-inverse-surface: #2f3131;
+  --color-surface-container-low: #f3f3f3;
+  --color-tertiary-fixed: #516161;
+  --color-secondary: #506169;
+  --color-error-container: #ffdad6;
+  --color-secondary-container: #c6d7e1;
+  --color-on-tertiary: #d4e6e5;
+  --color-surface-variant: #e2e2e2;
+
+  /* Border Radius */
+  --radius: 0.125rem;
+  --radius-lg: 0.25rem;
+  --radius-xl: 0.5rem;
+  --radius-full: 0.75rem;
+
+  /* Font Families */
+  --font-headline: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Space Grotesk", sans-serif;
+}
+
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
 }
@@ -6,4 +72,22 @@ html, body, #root {
 #root {
   max-width: none;
   padding: 0;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.bg-mesh {
+  background-color: #f9f9f9;
+  background-image: radial-gradient(
+      at 0% 0%,
+      rgba(198, 215, 225, 0.15) 0px,
+      transparent 50%
+    ),
+    radial-gradient(
+      at 100% 100%,
+      rgba(198, 215, 225, 0.1) 0px,
+      transparent 50%
+    );
 }
