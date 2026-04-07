@@ -8,31 +8,31 @@ export default function About() {
 
   return (
     <section
-      className="min-h-screen flex flex-col justify-center py-32 px-8 bg-surface-container-low"
+      className="min-h-screen flex flex-col justify-center py-16 sm:py-24 md:py-32 px-4 sm:px-8 bg-surface-container-low"
       id="about"
     >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
-        <div className="relative aspect-square bg-surface-container-highest overflow-hidden rounded-sm">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-16 md:gap-24 items-center">
+        <div className="relative aspect-[4/3] md:aspect-square bg-surface-container-highest overflow-hidden rounded-sm">
           <img
             className="w-full h-full object-cover grayscale contrast-125"
             alt="Professional craftsman focusing on a detail of a wooden joint"
             src={ABOUT_IMAGE}
           />
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-5 sm:gap-8">
           <div className="flex items-center gap-4">
             <div className="h-px w-12 bg-primary" />
             <h2 className="font-label text-sm uppercase tracking-[0.4em] font-bold">
               {t("about.label")}
             </h2>
           </div>
-          <h3 className="font-headline text-5xl font-extrabold tracking-tight leading-tight">
+          <h3 className="font-headline text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
             {t("about.heading")}
           </h3>
-          <p className="font-body text-lg text-on-surface-variant leading-relaxed">
+          <p className="font-body text-base sm:text-lg text-on-surface-variant leading-relaxed">
             {t("about.description")}
           </p>
-          <div className="grid grid-cols-2 gap-6 mt-4">
+          <div className="grid grid-cols-2 gap-6 mt-2 sm:mt-4">
             <div>
               <span className="font-label text-[10px] uppercase tracking-widest text-outline block mb-1">
                 {t("about.materialsLabel")}

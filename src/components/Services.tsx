@@ -30,36 +30,34 @@ export default function Services() {
 
   return (
     <section
-      className="min-h-screen flex flex-col justify-center py-32 px-8 bg-surface"
+      className="min-h-screen flex flex-col justify-center py-16 sm:py-24 md:py-32 px-4 sm:px-8 bg-surface"
       id="services"
     >
-      <div className="max-w-7xl mx-auto">
-        <div className="mb-20 flex justify-between items-end">
-          <div>
-            <span className="font-label text-xs uppercase tracking-[0.4em] text-outline mb-2 block">
-              {t("services.label")}
-            </span>
-            <h2 className="font-headline text-6xl font-black uppercase">
-              {t("services.heading")}
-            </h2>
-          </div>
+      <div className="max-w-7xl mx-auto w-full">
+        <div className="mb-10 sm:mb-16 md:mb-20">
+          <span className="font-label text-xs uppercase tracking-[0.4em] text-outline mb-2 block">
+            {t("services.label")}
+          </span>
+          <h2 className="font-headline text-4xl sm:text-5xl md:text-6xl font-black uppercase">
+            {t("services.heading")}
+          </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {SERVICE_IMAGES.map((service, i) => (
             <div
               key={i}
-              className={`group ${service.bgClass} p-8 h-[400px] flex flex-col justify-between rounded-sm border border-transparent hover:border-outline-variant transition-all duration-300`}
+              className={`group ${service.bgClass} p-6 sm:p-8 min-h-[320px] sm:min-h-[360px] lg:min-h-[400px] flex flex-col justify-between rounded-sm border border-transparent hover:border-outline-variant transition-all duration-300`}
             >
               <div>
-                <span className="font-label text-3xl font-light text-secondary-fixed-dim">
+                <span className="font-label text-2xl sm:text-3xl font-light text-secondary-fixed-dim">
                   {NUMBERS[i]}
                 </span>
-                <h4 className="font-headline text-2xl font-bold mt-4 uppercase tracking-tighter">
+                <h4 className="font-headline text-xl sm:text-2xl font-bold mt-3 sm:mt-4 uppercase tracking-tighter">
                   {t(`services.items.${i}.title`)}
                 </h4>
               </div>
               <div>
-                <p className="font-body text-sm text-on-surface-variant mb-6">
+                <p className="font-body text-sm text-on-surface-variant mb-4 sm:mb-6">
                   {t(`services.items.${i}.description`)}
                 </p>
                 <div className="w-full aspect-video bg-surface-container-highest overflow-hidden">
